@@ -40,12 +40,12 @@ cd photon
 
 **Windows (PowerShell)**
 ```powershell
-tar -a -c -f "Photon Shaders - Reimagined.zip" "shaders" "LICENSE"
+tar -a -c -f "Photon Reimagined - Legacy - v1.0.zip" "shaders" "LICENSE"
 ```
 
 **Linux / WSL**
 ```bash
-zip -r "Photon Shaders - Reimagined.zip" shaders/ LICENSE
+zip -r "Photon Reimagined - Legacy - v1.0.zip" shaders/ LICENSE
 ```
 
 ## Features
