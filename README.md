@@ -4,8 +4,6 @@
 
 <p align = "center">A custom Minecraft shader pack, reimagined from <a href="https://github.com/sixthsurge/photon">Photon</a> by <a href="https://github.com/sixthsurge">sixthsurge</a>, with Physics Mod ocean physics compatibility and advanced Colorwheel support</p>
 
-> **This is a custom fork of [Photon Shaders](https://github.com/sixthsurge/photon) by [sixthsurge](https://github.com/sixthsurge).**
->
 > See [CHANGELOG.md](CHANGELOG.md) for a full list of changes from the original.
 
 
