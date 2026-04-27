@@ -111,9 +111,9 @@ zip -r "Photon Shaders - Reimagined.zip" shaders/ LICENSE
 * [Physics Mod](https://minecraftphysicsmod.com/)
 * [Create](https://modrinth.com/mod/create/) via [Colorwheel](https://github.com/djefrey/Colorwheel)
 
-## Changelog
+## Contributing
 
-See [CHANGELOG.md](CHANGELOG.md) for a full list of changes from the original Photon Shaders.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
