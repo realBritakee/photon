@@ -2,6 +2,8 @@
 
 <h1 align = "center">Photon Shaders - Reimagined</h1>
 
+<p align = "center">Legacy branch - see <a href="https://github.com/realBritakee/photon-reimagined/tree/reimagined">reimagined</a> for the latest version with Visual Style profiles, quality presets, and all current features.</p>
+
 <p align = "center">A custom Minecraft shader pack, reimagined from <a href="https://github.com/sixthsurge/photon">Photon</a> by <a href="https://github.com/sixthsurge">sixthsurge</a>, with Physics Mod ocean physics compatibility and advanced Colorwheel support</p>
 
 > See [CHANGELOG.md](CHANGELOG.md) for a full list of changes from the original.
