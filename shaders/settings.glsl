@@ -12,6 +12,12 @@
 #if !defined SETTINGS_INCLUDED
 #define SETTINGS_INCLUDED
 
+#ifndef PROFILE
+  #define PROFILE 0 // [0 1 2]
+#endif
+
+#include "/settings/profiles.glsl"
+
 const int noiseTextureResolution = 512;
 
 const bool shadowHardwareFiltering1 = true;
@@ -662,6 +668,10 @@ const float wetnessHalflife         = 70.0;
 
 #if MC_VERSION > 12111
   #define USE_SEPARATE_ENTITY_DRAWS
+#endif
+
+#ifndef ORIGINAL_CREATOR
+  #define ORIGINAL_CREATOR 0 // [0 1 2 3]
 #endif
 
 #endif // SETTINGS_INCLUDED

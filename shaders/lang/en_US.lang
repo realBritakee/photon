@@ -1,9 +1,39 @@
 # Profiles
 
-profile.low                            = §eLow
-profile.medium                         = §aMedium
-profile.high                           = §bHigh
-profile.ultra                          = §dUltra
+profile.potato                         = §8Potato
+profile.verylow                        = §7Very Low
+profile.low                            = §aLow
+profile.medium                         = §2Medium
+profile.high                           = §6High
+profile.veryhigh                       = §eVery High
+profile.ultra                          = §4Ultra
+profile.potato.comment                 = Absolute minimum quality for very old or integrated hardware. 512 shadow map, 4-chunk shadow distance, no PCF, no VL, no reflections, no AO. Squeeze out every frame you can.
+profile.verylow.comment                = Bare minimum with slightly more shadow range. 1024 shadow map, 4-chunk distance, no PCF filtering, no VL, no reflections. For weak laptops and integrated graphics.
+profile.low.comment                    = Basic quality for budget hardware. PCF shadow filtering and volumetric fog enabled, 6-chunk shadow distance. Good starting point for low-end GPUs and older mid-range.
+profile.medium.comment                 = Balanced for mid-range hardware. Colored shadows, VPS soft shadows, GTAO ambient occlusion and VL all active. Targets GTX 1060-class GPUs and above.
+profile.high.comment                   = High quality for modern GPUs. Adds screen-space reflections, water caustics, water parallax, entity shadows and SSRT distant shadows. RTX 2070 or equivalent recommended.
+profile.veryhigh.comment               = Near-maximum quality. All high-tier effects plus colored block lighting. Targets high-end GPUs like RTX 3080 or RX 6800 XT. Expect significant VRAM use with colored lights.
+profile.ultra.comment                  = Maximum quality, no compromises. 4096 shadow map, 16-chunk distance, colored light shafts, block entity shadows. High-end GPU required. Heavy performance cost.
+
+# Reimagined
+
+option.INFO                            = Reimagined
+option.INFO.comment                    = Photon Shaders - Reimagined by Britakee. A custom shader pack built on top of Photon by sixthsurge, extended with Physics Mod ocean physics and Colorwheel support for Flywheel-based mods like Create.
+option.PROFILE                         = Visual Style
+option.PROFILE.comment                 = Selects the overall visual style of the shader. Reimagined is the default look with vibrant colors and natural lighting. Original matches classic Photon. Apocalyptic adds desaturated skies, darker ambient light, dimmer sun, and heavier night fog for a post-apocalyptic feel.
+value.PROFILE.0                        = §6Reimagined
+value.PROFILE.1                        = §7Apocalyptic
+value.PROFILE.2                        = §aOriginal
+value.INFO.0                           = §6by Britakee
+value.INFO.1                           = §eby Britakee
+value.INFO.2                           = §bby Britakee
+value.INFO.3                           = §dby Britakee
+option.ORIGINAL_CREATOR                = Photon Shaders
+option.ORIGINAL_CREATOR.comment        = Original Photon Shaders by sixthsurge
+value.ORIGINAL_CREATOR.0               = §6by sixthsurge
+value.ORIGINAL_CREATOR.1               = §eby sixthsurge
+value.ORIGINAL_CREATOR.2               = §bby sixthsurge
+value.ORIGINAL_CREATOR.3               = §dby sixthsurge
 
 # Screens
 
@@ -73,12 +103,6 @@ screen.nether_color                    = Static Color
 
 screen.distance_view                   = Distance View
 
-option.INFO                            = Photon Shaders
-value.INFO.0                           = §eby SixthSurge
-value.INFO.1                           = §aby SixthSurge
-value.INFO.2                           = §bby SixthSurge
-value.INFO.3                           = §dby SixthSurge
-
 # World settings
 
 option.WAVING_PLANTS                   = Waving Plants
@@ -139,20 +163,24 @@ option.SHADING_STRENGTH.comment        = Adjusts the contrast of direct light sh
 
 option.SHADOW                          = Shadow Mapping
 option.SHADOW_PCF                      = Shadow Map Filtering
+option.SHADOW_PCF.comment              = Percentage-Closer Filtering softens shadow edges for a more natural look. Small GPU cost. Without it, shadows have hard pixelated edges.
 option.SHADOW_SSRT                     = SSRT Distant Shadows
 option.SHADOW_SSRT_STEPS               = SSRT Shadow Steps
 option.SHADOW_COLOR                    = Colored Shadows
-option.SHADOW_COLOR.comment            = Translucent blocks cast tinted shadows
+option.SHADOW_COLOR.comment            = Allows colored light to pass through stained glass and other translucent blocks, casting tinted shadows. Moderate GPU cost.
 option.SHADOW_VPS                      = Variable Penumbra Shadows
 option.SHADOW_VPS.comment              = Shadows grow softer further from their caster
 option.shadowMapResolution             = Shadow Resolution
+option.shadowMapResolution.comment     = Resolution of the shadow map texture. Higher values produce sharper, more detailed shadows but cost more GPU time. Affects all shadow-casting light sources.
 option.shadowDistance                  = Shadow Distance
+option.shadowDistance.comment           = How far shadows render from the camera in blocks. Higher values cast shadows further but spread the shadow map thinner, reducing close-up quality. Interacts with Shadow Resolution.
 option.sunPathRotation                 = Sun Path Rotation
 option.SHADOW_PENUMBRA_SCALE           = Shadow Softness
 option.SHADOW_PENUMBRA_SCALE.comment   = Adjust the softness of shadows
 option.ENTITY_SHADOWS                  = Entity Shadows
-option.ENTITY_SHADOWS.comment          = Whether entities can cast shadows.\nDisable this to improve performance in survival bases with large farms
+option.ENTITY_SHADOWS.comment          = Mobs, players, dropped items, and other entities cast shadows. Noticeable GPU cost in areas with many entities.
 option.BLOCK_ENTITY_SHADOWS            = Block Entity Shadows
+option.BLOCK_ENTITY_SHADOWS.comment    = Chests, signs, banners, heads, and other block entities cast shadows. Can be expensive in builds with many block entities.
 option.PIXELATED_SHADOWS               = Pixelated Shadows
 option.PIXELATED_SHADOWS.comment       = Shadows snap to block texels, creating a pixelated look
 option.PIXELATED_SHADOWS_RESOLUTION    = Pixelated Shadows Resolution
@@ -170,6 +198,8 @@ option.SSAO_RADIUS                     = SSAO Radius
 option.SSAO_RADIUS.comment             = Adjusts the radius of SSAO - distance which objects can occlude each otherdistance which objects can occlude each other
 option.SSAO_STEPS                      = SSAO Steps
 option.SSAO_STEPS.comment              = Controls how noisy the SSAO appears
+option.GTAO                            = GTAO
+option.GTAO.comment                    = Ground Truth Ambient Occlusion. Adds soft contact shadows in corners, crevices, and where objects meet surfaces. Moderate GPU cost. Enhances depth perception significantly.
 option.GTAO_RADIUS                     = GTAO Radius
 option.GTAO_RADIUS.comment             = Adjusts the radius of GTAO - distance which objects can occlude each otherdistance which objects can occlude each other
 option.GTAO_SLICES                     = GTAO Slices
@@ -553,7 +583,7 @@ value.TEXTURE_FORMAT.TEXTURE_FORMAT_LAB = labPBR
 value.TEXTURE_FORMAT.TEXTURE_FORMAT_OLD = Old PBR
 
 option.ENVIRONMENT_REFLECTIONS         = Environment Reflections
-option.ENVIRONMENT_REFLECTIONS.comment = Screen-space reflections. Makes water and shiny blocks reflect their environment. Big performance impact
+option.ENVIRONMENT_REFLECTIONS.comment = Screen-space reflections on glossy and metallic surfaces. Significant GPU cost. Quality depends on what is currently visible on screen.
 option.SKY_REFLECTIONS                 = Sky Reflections
 option.SKY_REFLECTIONS.comment         = Makes water and shiny blocks reflect the sky
 option.SSR_ROUGHNESS_SUPPORT           = Roughness Support
