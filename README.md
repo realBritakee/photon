@@ -137,16 +137,8 @@ See [CHANGELOG.md](CHANGELOG.md) for a full list of changes from the original Ph
 
 ---
 
-## Related Projects
+## License
 
-### Voxy (LoD mod)
-Far-distance LoD rendering - **compatible with Photon Shaders Reimagined** including Physics Mod ocean support.
+Copyright (c) 2026 Britakee. All rights reserved.
 
-- **1.20.1 / 1.21.1** → [github.com/realBritakee/voxy-neoforge](https://github.com/realBritakee/voxy-neoforge) *(custom NeoForge port)*
-- **Other versions** → [modrinth.com/mod/voxy](https://modrinth.com/mod/voxy) *(official)*
-
-### Voxy World Gen V2
-Background chunk pre-generation for Voxy - compatible with this shader.
-
-- **1.20.1 / 1.21.1** → [github.com/realBritakee/voxy_worldgen_v2](https://github.com/realBritakee/voxy_worldgen_v2) *(custom port)*
-- **Other versions** → [modrinth.com/mod/voxy-worldgen](https://modrinth.com/mod/voxy-worldgen) *(official)*
+Based on [Photon Shaders](https://github.com/sixthsurge/photon) by sixthsurge, licensed under the original Photon license.
