@@ -88,28 +88,6 @@ zip -r "Photon Shaders - Reimagined.zip" shaders/ LICENSE
 
 See [CHANGELOG.md](CHANGELOG.md) for a full list of changes from the original Photon Shaders.
 
-## Showcase videos
-
-<div align = "center">
-	<a href="http://www.youtube.com/watch?feature=player_embedded&v=vxE_CVeU8Rs" target="_blank"><img src="http://img.youtube.com/vi/vxE_CVeU8Rs/0.jpg" border="0"/></a>
-	<p> by iambeen
-	<br><br>
-</div>
-
-<div align = "center">
-	<a href="http://www.youtube.com/watch?feature=player_embedded&v=gMLFZMBK-ZQ" target="_blank"><img src="http://img.youtube.com/vi/gMLFZMBK-ZQ/0.jpg" border="0"/></a>
-	<p> by CosmicNexus
-	<br><br>
-</div>
-
-<div align = "center">
-	<a href="http://www.youtube.com/watch?feature=player_embedded&v=_aSmM7jg9Nw" target="_blank"><img src="http://img.youtube.com/vi/_aSmM7jg9Nw/0.jpg" border="0"/></a>
-	<p> by VIPUL
-	<br><br>
-</div>
-
----
-
 ## License
 
 Copyright (c) 2026 Britakee. All rights reserved.
