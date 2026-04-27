@@ -108,8 +108,8 @@ zip -r "Photon Shaders - Reimagined.zip" shaders/ LICENSE
 * [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons)
 * [Voxy](https://modrinth.com/mod/voxy)
 * [Photonics](https://modrinth.com/mod/photonics)
-* [Physics Mod](https://minecraftphysicsmod.com/) ✅
-* [Create](https://modrinth.com/mod/create/) via [Colorwheel](https://github.com/djefrey/Colorwheel) ✅
+* [Physics Mod](https://minecraftphysicsmod.com/)
+* [Create](https://modrinth.com/mod/create/) via [Colorwheel](https://github.com/djefrey/Colorwheel)
 
 ## Changelog
 
