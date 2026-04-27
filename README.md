@@ -1,8 +1,8 @@
 <br><br>
 
-<h1 align = "center">Photon Shaders — Reimagined</h1>
+<h1 align = "center">Photon Shaders - Reimagined</h1>
 
-<p align = "center">A custom Minecraft shader pack — reimagined from <a href="https://github.com/sixthsurge/photon">Photon</a> with Physics Mod ocean physics compatibility and advanced Colorwheel support</p>
+<p align = "center">A custom Minecraft shader pack, reimagined from <a href="https://github.com/sixthsurge/photon">Photon</a> by <a href="https://github.com/sixthsurge">sixthsurge</a>, with Physics Mod ocean physics compatibility and advanced Colorwheel support</p>
 
 > **This is a custom fork of [Photon Shaders](https://github.com/sixthsurge/photon) by [sixthsurge](https://github.com/sixthsurge).**
 >
@@ -10,8 +10,8 @@
 
 
 > **Works best with:**
-> 🧊 [Voxy — NeoForge Port](https://github.com/realBritakee/voxy-neoforge) — compatible Voxy build for 1.20.1/1.21.1 with Physics Mod ocean support · [other versions](https://modrinth.com/mod/voxy)
-> 🌍 [Voxy World Gen V2](https://github.com/realBritakee/voxy_worldgen_v2) — background chunk pre-generation for Voxy · [other versions](https://modrinth.com/mod/voxy-worldgen)
+> 🧊 [Voxy - NeoForge Port](https://github.com/realBritakee/voxy-neoforge) - compatible Voxy build for 1.20.1/1.21.1 with Physics Mod ocean support · [other versions](https://modrinth.com/mod/voxy)
+> 🌍 [Voxy World Gen V2](https://github.com/realBritakee/voxy_worldgen_v2) - background chunk pre-generation for Voxy · [other versions](https://modrinth.com/mod/voxy-worldgen)
 
 ![Screenshot](docs/images/oceanphysics.png)
 
@@ -22,11 +22,11 @@
 * OptiFine is also supported on Minecraft 1.16.5 and above
 
 ### Optional: Physics Mod
-* Install [Physics Mod](https://minecraftphysicsmod.com/) — ocean waves and object physics will render correctly with Photon's pipeline automatically
+* Install [Physics Mod](https://minecraftphysicsmod.com/) - ocean waves and object physics will render correctly with Photon's pipeline automatically
 
 ### Optional: Colorwheel (Create mod support)
 * Install [Colorwheel](https://github.com/djefrey/Colorwheel) to enable proper shading for Flywheel-based mods (e.g. [Create](https://modrinth.com/mod/create/))
-* No Colorwheel Patcher needed — native `clrwl_*` programs are built in
+* No Colorwheel Patcher needed - native `clrwl_*` programs are built in
 * Forge 1.20.1: `colorwheel-forge-1.2.4+mc1.20.1.jar`
 * NeoForge 1.21.1: `colorwheel-neoforge-1.2.4+mc1.21.1.jar`
 
@@ -49,8 +49,8 @@ zip -r "Photon Shaders - Reimagined.zip" shaders/ LICENSE
 ```
 
 ## Features
-* Native [Colorwheel](https://github.com/djefrey/Colorwheel) support — Flywheel-based mods (e.g. [Create](https://modrinth.com/mod/create/)) render correctly with full Photon shading and shadows
-* Full [Physics Mod](https://minecraftphysicsmod.com/) ocean support — realistic wave physics rendered correctly in the deferred pipeline
+* Native [Colorwheel](https://github.com/djefrey/Colorwheel) support - Flywheel-based mods (e.g. [Create](https://modrinth.com/mod/create/)) render correctly with full Photon shading and shadows
+* Full [Physics Mod](https://minecraftphysicsmod.com/) ocean support - realistic wave physics rendered correctly in the deferred pipeline
 * Fully revamped sky, lighting and water
 * Detailed clouds with many layers and cloud types
 * Immersive weather system providing different skies each day
@@ -70,12 +70,12 @@ zip -r "Photon Shaders - Reimagined.zip" shaders/ LICENSE
 * Nvidia
 * AMD
 * Intel
-* **_NOT_** Apple Metal — may work with _SH Skylight_ and _Colored Shadows_ disabled
+* **_NOT_** Apple Metal - may work with _SH Skylight_ and _Colored Shadows_ disabled
 
 ### Shader loaders
 * Iris 1.5+ (recommended)
 * Oculus (Forge)
-* OptiFine — Minecraft 1.16.5 and above
+* OptiFine - Minecraft 1.16.5 and above
 
 ### Special mod support
 * [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons)
@@ -113,13 +113,13 @@ See [CHANGELOG.md](CHANGELOG.md) for a full list of changes from the original Ph
 ## Related Projects
 
 ### Voxy (LoD mod)
-Far-distance LoD rendering — **compatible with Photon Shaders Reimagined** including Physics Mod ocean support.
+Far-distance LoD rendering - **compatible with Photon Shaders Reimagined** including Physics Mod ocean support.
 
 - **1.20.1 / 1.21.1** → [github.com/realBritakee/voxy-neoforge](https://github.com/realBritakee/voxy-neoforge) *(custom NeoForge port)*
 - **Other versions** → [modrinth.com/mod/voxy](https://modrinth.com/mod/voxy) *(official)*
 
 ### Voxy World Gen V2
-Background chunk pre-generation for Voxy — compatible with this shader.
+Background chunk pre-generation for Voxy - compatible with this shader.
 
 - **1.20.1 / 1.21.1** → [github.com/realBritakee/voxy_worldgen_v2](https://github.com/realBritakee/voxy_worldgen_v2) *(custom port)*
 - **Other versions** → [modrinth.com/mod/voxy-worldgen](https://modrinth.com/mod/voxy-worldgen) *(official)*
