@@ -111,6 +111,14 @@ zip -r "Photon Reimagined - v1.0.zip" shaders/ LICENSE
 * [Physics Mod](https://minecraftphysicsmod.com/)
 * [Create](https://modrinth.com/mod/create/) via [Colorwheel](https://github.com/djefrey/Colorwheel)
 
+## Build
+
+Package the shaderpack into a zip ready to drop into your `shaderpacks` folder:
+
+```bash
+zip -r "Photon - Reimagined.zip" shaders/ LICENSE README.md
+```
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
