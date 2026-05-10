@@ -175,7 +175,7 @@ vec4 raymarch_blocky_clouds(
 ) {
     const uint primary_steps = BLOCKY_CLOUDS_PRIMARY_STEPS;
     const uint lighting_steps = BLOCKY_CLOUDS_LIGHTING_STEPS;
-    const float max_ray_length = 512;
+    const float max_ray_length = 512.0;
     const float min_transmittance = 0.075;
 
     // ---------------------

@@ -26,7 +26,7 @@ vec3 decode_unit_vector(vec2 e) {
     vec3 v = vec3(e.xy, 1.0 - abs(e.x) - abs(e.y));
 
     // Reflect the folds of the lower hemisphere over the diagonals
-    if (v.z < 0) {
+    if (v.z < 0.0) {
         v.xy = (1.0 - abs(v.yx)) * sign_non_zero(v.xy);
     }
 

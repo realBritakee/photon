@@ -19,7 +19,7 @@ float fast_acos(float x) {
     float res = (C2 * abs(x) + C1) * abs(x) + C0; // p(x)
     res *= sqrt(1.0 - abs(x));
 
-    return x >= 0 ? res : pi - res; // Undo range reduction
+    return x >= 0.0 ? res : pi - res; // Undo range reduction
 }
 
 vec2 fast_acos(vec2 v) { return vec2(fast_acos(v.x), fast_acos(v.y)); }

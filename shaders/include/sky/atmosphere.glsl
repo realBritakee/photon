@@ -474,7 +474,7 @@ vec2 atmosphere_transmittance_uv(float mu, float r) {
     // Distance to the atmosphere outer limit for a horizontal ray at ground
     // level
     const float H
-        = sqrt(max(atmosphere_outer_radius_sq - atmosphere_inner_radius_sq, 0));
+        = sqrt(max(atmosphere_outer_radius_sq - atmosphere_inner_radius_sq, 0.0));
 
     // Distance to the horizon
     float rho = sqrt(max0(r * r - atmosphere_inner_radius_sq));

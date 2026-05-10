@@ -139,7 +139,7 @@ vec3 sample_ggx_vndf(vec3 viewer_dir, vec2 alpha, vec2 hash) {
     viewer_dir.z));
 
         // Section 4.1: orthonormal basis (with special case if cross product is
-    zero) float len_sq = length_squared(viewer_dir.xy); vec3 T1 = (len_sq > 0) ?
+    zero) float len_sq = length_squared(viewer_dir.xy); vec3 T1 = (len_sq > 0.0) ?
     vec3(-viewer_dir.y, viewer_dir.x, 0) * inversesqrt(len_sq) : vec3(1.0, 0.0,
     0.0); vec3 T2 = cross(viewer_dir, T1);
 

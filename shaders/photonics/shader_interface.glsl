@@ -22,7 +22,7 @@ uniform vec2 view_pixel_size;
 #include "/include/utility/spherical_harmonics.glsl"
 #endif
 
-vec3 indirect_light_color = vec3(0f);
+vec3 indirect_light_color = vec3(0.0);
 #define sun_direction light_dir
 
 vec3 load_world_position() {
@@ -58,12 +58,12 @@ void load_fragment_variables(out vec3 albedo, out vec3 world_pos, out vec3 world
     indirect_light_color = texelFetch(colortex4, ivec2(191, 1), 0).rgb;
 #endif
 #else
-    indirect_light_color = mix(texelFetch(colortex4, ivec2(191, 1), 0).rgb, vec3(1f), 0.5);
+    indirect_light_color = mix(texelFetch(colortex4, ivec2(191, 1), 0).rgb, vec3(1.0), 0.5);
 #endif
 #endif
 
     // Photonics expects this offset when it uses world_pos
-    world_pos = load_world_position() - 0.01f * world_normal;
+    world_pos = load_world_position() - 0.01 * world_normal;
 }
 
 vec2 get_taa_jitter() {
@@ -76,11 +76,11 @@ vec2 get_taa_jitter() {
 #endif
 
 #else
-    return vec2(0f);
+    return vec2(0.0);
 #endif
 }
 
 bool is_in_world() {
     //Photonics bug! depthtex0 is inheirted from d0_sky_map
-    return texelFetch(depthtex1, ivec2(gl_FragCoord.xy), 0).x <= 0.99999f;
+    return texelFetch(depthtex1, ivec2(gl_FragCoord.xy), 0).x <= 0.99999;
 }
